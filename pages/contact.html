@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="main__head">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="../image/logo.png" alt="logo">
+        </div>
+        <ul class="nav__list">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="game-info.html">GAME</a></li>
+          <li><a href="media.html">MEDIA</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="sign-up.html">SIGN UP</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section>
+      <article class="contact__container">
+        <form action="#">
+          <h2 class="form--title">Tell us more about the error you are having</h2>
+          <label for="error_select"> Error</label>
+          <select name="error_select" id="error_select"> 
+            <option value="error_1">error 1</option>
+            <option value="error_2">error 2</option>
+            <option value="error_3">error 3</option>
+          </select>
+          <div>
+            <label for="name">Name:
+              <input type="text" placeholder="name">
+            </label>
+            <label for="email">Email:
+              <input type="email" placeholder="example@gmail.com" name="email">
+            </label>
+          </div>
+          <div>
+            <label for="more_information">More information:
+              <textarea placeholder="more information about the error you are having" rows="8" cols="34"></textarea>
+            </label>
+          </div>
+          <input type="SUBMIT" value="SUBMIT" class="form--submit">
+          <input type="reset" value="RESET" class="form--reset">
+        </form>
+      </article>
+    </section>  
+  </div>
+</body>
+</html>
