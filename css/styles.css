@@ -45,7 +45,7 @@ body{
 }
 
 .navbar {
-  background-color: rgb(17, 17, 17);
+  background-image: linear-gradient(to right, rgba(0,0,0), rgb(184, 24, 24));
   padding: 15px;
   width: auto;
   grid-area: nav;
@@ -229,4 +229,11 @@ form .form--title {
   form textarea{
     width: 100%;
   }
+}
+
+.logo-valorant:hover {
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(180deg);
+  transition-duration: 2s;
+  -webkit-transition-duration:2s;
 }
