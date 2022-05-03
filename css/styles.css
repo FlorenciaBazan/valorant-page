@@ -38,13 +38,15 @@ body{
 .nav__list{
   margin-left: 20px;
   display: inline-block;
+   margin-top: inherit;
+  margin-bottom: inherit;
 }
 
 .nav__list a:link, a:visited {
   color: whitesmoke;
 }
 
-.navbar {
+.navbar__custom {
   background-image: linear-gradient(to right, rgba(0,0,0), rgb(184, 24, 24));
   padding: 15px;
   width: auto;
@@ -151,7 +153,7 @@ form .form--title {
   grid-area: footer;
 }
 
-.card {
+.card__custom {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   transition: 0.3s;
   border-radius: 20px;
@@ -159,13 +161,24 @@ form .form--title {
   margin: 10px;
 }
 
-.card img {
+.card__custom img {
   border-radius: 5px 5px 0 0;
   width: 100%;
 }
 
-.card .container {
+.card__custom .container {
   padding: 2px 16px;
+}
+
+.weapon__summary__card{
+  width: 100%;
+  border: 0.1rem solid #bdbcb7;
+}
+
+.module__weapon {
+  margin: 1rem 0 1rem -4%;
+  padding: 0 3%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -192,7 +205,7 @@ form .form--title {
     display: inline-block;
   }
 
-  .card{
+  .card__custom{
     display: inline-block;
     flex: 1;
   }
@@ -217,7 +230,7 @@ form .form--title {
     justify-content: unset;
   }
 
-  .card {
+  .card__custom {
     flex: unset;
     margin: 0 auto 20px auto;
   }
