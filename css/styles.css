@@ -10,6 +10,15 @@ body{
   height: 100vh;
   background-color: #ece8e1;
 }
+.sign-up{
+  background-image: url("https://lolstatic-a.akamaihd.net/rso-login-page/3.2.16/assets/valorant_desktop_background_2x.jpg");
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
 .table-agents{
   width: 60%;
 }
@@ -71,7 +80,7 @@ footer a{
   padding: 10px;
 }
 
-form{
+.custom-form{
   border: 2px solid #ccc;
   border-radius: 20px;
   padding: 12px 20px;
@@ -79,22 +88,22 @@ form{
   text-align: left;
 }
 
-form input{
+.custom-form input{
   border: 1px solid #ccc;
   box-sizing: border-box;
   padding: 12px 20px;
   margin: 8px 0;
 }
 
-form textarea {
+.custom-form textarea {
   resize: none;
 }
 
-form label {
+.custom-form label {
   font-weight: 600;
 }
 
-form .form--submit {
+.custom-form .form--submit {
   background-color: #4CAF50;
   border-color: #4CAF50;
   color: white;
@@ -103,7 +112,7 @@ form .form--submit {
   border-radius: 4px;
 }
 
-form .form--reset {
+.custom-form .form--reset {
   background-color: #ffc107;
   border-color: #ffc107;
   color: white;
@@ -112,7 +121,7 @@ form .form--reset {
   border-radius: 4px;
 }
 
-form .form--title {
+.custom-form .form--title {
   padding: 20px 0px;
 }
 
@@ -175,11 +184,94 @@ form .form--title {
   border: 0.1rem solid #bdbcb7;
 }
 
+.module__weapon:hover {
+  transform: scale(1.5);
+}
+
 .module__weapon {
   margin: 1rem 0 1rem -4%;
   padding: 0 3%;
   width: 100%;
 }
+
+.hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.hero h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #683aa4;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 16px;
+  font-weight: 300;
+}
+button {
+  max-width: 50%;
+  border-radius: 50px !important;
+}
+.hero .col {
+  justify-content: center; 
+  flex-direction: column;
+  display: flex;
+}
+
+.hero-text-container {
+  order: 1;
+  margin-top: 25px;
+}
+
+.hero .img-col {
+  justify-content: flex-end; 
+  margin-top: 100px;
+}
+.hero .card {
+  box-shadow: 11px 7px 16px #f9f9f9;
+  border: 0;
+  text-align: center;
+}
+.hero .icon {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.cards {
+  margin: 0 auto;
+}
+
+.form-text-custom {
+  margin-top: 0.25rem;
+  font-size: .875em;
+  color: #fff;
+}
+
+.sign-up-form {
+  margin-top: 50%;
+}
+
+.news-card img:hover{
+  transform: scale(1.5);
+}
+
+.news-card {
+  z-index: 10;
+}
+
+.news-button:hover span {
+  display: none;
+}
+
+.news-button:hover:after {
+  content: "Check the last changes";
+}
+
+.news-button:hover {
+  background-color: #683aa4;
+}
+
 
 @media only screen and (min-width: 768px) {
   .index__video {
@@ -210,8 +302,13 @@ form .form--title {
     flex: 1;
   }
   
-  form {
+  .custom-form {
     width: 43%;
+  }
+
+  .hero-text-container {
+    order: inherit;
+    margin-top: inherit;
   }
 }
 
@@ -235,18 +332,29 @@ form .form--title {
     margin: 0 auto 20px auto;
   }
 
-  form {
+  .custom-form {
     width: 32%;
   }
 
-  form textarea{
+  .custom-form textarea{
     width: 100%;
+  }
+
+  .hero-text-container {
+    order: inherit;
+    margin-top: inherit;
   }
 }
 
-.logo-valorant:hover {
-  transform: rotateY(360deg);
-  -webkit-transform: rotateY(180deg);
-  transition-duration: 2s;
-  -webkit-transition-duration:2s;
+.logo-valorant {
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
