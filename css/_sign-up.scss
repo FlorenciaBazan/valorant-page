@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Nanum Gothic Coding", monospace;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ece8e1;
+}
+
+.sign-up {
+  background-image: url("https://lolstatic-a.akamaihd.net/rso-login-page/3.2.16/assets/valorant_desktop_background_2x.jpg");
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.nav__list {
+  margin-left: 20px;
+  display: inline-block;
+  margin-top: inherit;
+  margin-bottom: inherit;
+
+  a {
+    text-decoration: none;
+  }
+
+  li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 5px 5px 25px;
+  }
+
+  a:link, a:visited {
+    color: whitesmoke;
+  }
+}
+
+.navbar__custom {
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(184, 24, 24));
+  padding: 15px;
+  width: auto;
+  grid-area: nav;
+}
+
+.logo {
+  display: inline-block;
+
+  img {
+    width: 30px;
+    display: inline-block;
+  }
+}
+
+footer {
+  margin-top: auto;
+  background-color: rgb(17, 17, 17);
+  text-align: center;
+  padding: 10px;
+
+  a {
+    text-decoration: none;
+    padding: 10px;
+  }
+}
+
+.custom-form {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 12px 20px;
+  display: inline-block;
+  text-align: left;
+
+  input {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  .form--submit {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .form--reset {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .form--title {
+    padding: 20px 0px;
+  }
+}
+
+.form-text-custom {
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #fff;
+}
+
+.sign-up-form {
+  margin-top: 50%;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    flex-direction: column;
+  }
+
+  .custom-form {
+    width: 32%;
+  }
+
+  .custom-form textarea {
+    width: 100%;
+  }
+
+}
+.logo-valorant {
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/*# sourceMappingURL=styles.scss.map */
