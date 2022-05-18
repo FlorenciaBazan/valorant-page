@@ -94,22 +94,23 @@ footer {
     font-weight: 600;
   }
 
-  .form--submit {
-    background-color: #4CAF50;
-    border-color: #4CAF50;
+  .form-structure {
     color: white;
     cursor: pointer;
     border: none;
     border-radius: 4px;
   }
 
+  .form--submit {
+    @extend .form-structure;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+
   .form--reset {
+    @extend .form-structure;
     background-color: #ffc107;
     border-color: #ffc107;
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
   }
   
   .form--title {
