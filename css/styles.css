@@ -25,31 +25,17 @@ body {
 .table-agents {
   width: 60%;
 }
-
 .table-agents th {
   font-size: 2rem;
   font-weight: bold;
   padding: 16px;
 }
-
 .table-agents td {
   font-size: 1rem;
   padding: 16px;
 }
-
 .table-agents ol {
   list-style: none;
-}
-
-.nav__list li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px;
-  margin: 5px 5px 5px 25px;
-}
-
-.nav__list a {
-  text-decoration: none;
 }
 
 .nav__list {
@@ -58,13 +44,21 @@ body {
   margin-top: inherit;
   margin-bottom: inherit;
 }
-
-.nav__list a:link, a:visited {
-  color: whitesmoke;
+.nav__list li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px 5px 5px 25px;
+}
+.nav__list a {
+  text-decoration: none;
+}
+.nav__list a:link, .nav__list a:visited {
+  color: #f5f5f5;
 }
 
 .navbar__custom {
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(184, 24, 24));
+  background-image: linear-gradient(to right, #000000, #b81818);
   padding: 15px;
   width: auto;
   grid-area: nav;
@@ -73,7 +67,6 @@ body {
 .logo {
   display: inline-block;
 }
-
 .logo img {
   width: 30px;
   display: inline-block;
@@ -81,39 +74,34 @@ body {
 
 footer {
   margin-top: auto;
-  background-color: rgb(17, 17, 17);
+  background-color: #000000;
   text-align: center;
   padding: 10px;
 }
-
 footer a {
   text-decoration: none;
   padding: 10px;
 }
 
 .custom-form {
-  border: 2px solid #ccc;
+  border: 2px solid #fff;
   border-radius: 20px;
   padding: 12px 20px;
   display: inline-block;
   text-align: left;
 }
-
 .custom-form input {
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   box-sizing: border-box;
   padding: 12px 20px;
   margin: 8px 0;
 }
-
 .custom-form textarea {
   resize: none;
 }
-
 .custom-form label {
   font-weight: 600;
 }
-
 .custom-form .form--submit {
   background-color: #4CAF50;
   border-color: #4CAF50;
@@ -122,16 +110,14 @@ footer a {
   border: none;
   border-radius: 4px;
 }
-
 .custom-form .form--reset {
   background-color: #ffc107;
   border-color: #ffc107;
-  color: white;
+  color: #fff;
   cursor: pointer;
   border: none;
   border-radius: 4px;
 }
-
 .custom-form .form--title {
   padding: 20px 0px;
 }
@@ -170,29 +156,30 @@ footer a {
 }
 
 .card__custom {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 #000000;
   transition: 0.3s;
   border-radius: 20px;
   padding-bottom: 10px;
   margin: 10px;
 }
-
 .card__custom img {
   border-radius: 5px 5px 0 0;
   width: 100%;
 }
-
 .card__custom .container {
   padding: 2px 16px;
 }
 
-.weapon__summary__card {
-  width: 100%;
-  border: 0.1rem solid #bdbcb7;
+.card__title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #000000;
 }
 
-.module__weapon:hover {
-  transform: scale(1.5);
+.weapon__summary__card {
+  width: 100%;
+  border: 0.1rem solid #ece8e1;
 }
 
 .module__weapon {
@@ -201,11 +188,14 @@ footer a {
   width: 100%;
 }
 
+.module__weapon:hover {
+  transform: scale(1.5);
+}
+
 .hero {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
 .hero h1 {
   text-transform: uppercase;
   font-weight: 900;
@@ -213,10 +203,27 @@ footer a {
   text-align: left;
   margin-bottom: 20px;
 }
-
 .hero p {
   font-size: 16px;
   font-weight: 300;
+}
+.hero .col {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+.hero .img-col {
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+.hero .card {
+  box-shadow: 11px 7px 16px #fff;
+  border: 0;
+  text-align: center;
+}
+.hero .icon {
+  width: 90%;
+  margin-bottom: 20px;
 }
 
 button {
@@ -224,31 +231,9 @@ button {
   border-radius: 50px !important;
 }
 
-.hero .col {
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-}
-
 .hero-text-container {
   order: 1;
   margin-top: 25px;
-}
-
-.hero .img-col {
-  justify-content: flex-end;
-  margin-top: 100px;
-}
-
-.hero .card {
-  box-shadow: 11px 7px 16px #f9f9f9;
-  border: 0;
-  text-align: center;
-}
-
-.hero .icon {
-  width: 90%;
-  margin-bottom: 20px;
 }
 
 .cards {
@@ -265,12 +250,11 @@ button {
   margin-top: 50%;
 }
 
-.news-card img:hover {
-  transform: scale(1.5);
-}
-
 .news-card {
   z-index: 10;
+}
+.news-card img:hover {
+  transform: scale(1.5);
 }
 
 .news-button:hover span {
