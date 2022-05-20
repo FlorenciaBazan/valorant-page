@@ -125,6 +125,15 @@ footer a {
 .index__video video {
   max-width: 100%;
 }
+.index__video .centered {
+  position: absolute;
+  top: 70vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Rubik Glitch", cursive;
+  font-size: 20px;
+  color: #fff;
+}
 
 .wrapper {
   display: grid;
@@ -137,10 +146,15 @@ footer a {
   grid-area: header;
 }
 
-.container {
+.custom-container {
   grid-area: content;
   display: flex;
   flex-direction: column;
+}
+
+.card-container {
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .contact__container {
@@ -153,6 +167,14 @@ footer a {
 
 .main__footer {
   grid-area: footer;
+}
+
+.card {
+  margin: 20px;
+}
+
+.row {
+  --bs-gutter-x: 0;
 }
 
 .card__custom {
@@ -273,16 +295,19 @@ button {
   .index__video {
     margin-bottom: 20px;
   }
-
   .index__video video {
     width: 100%;
+  }
+  .index__video .centered {
+    font-size: 80px;
+    top: 35vh;
   }
 
   .wrapper {
     min-height: 100%;
   }
 
-  .container {
+  .custom-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -313,12 +338,15 @@ button {
   }
 
   .index__video {
-    height: 49rem;
     overflow: hidden;
     width: 100%;
   }
+  .index__video .centered {
+    font-size: 80px;
+    top: 40vw;
+  }
 
-  .container {
+  .custom-container {
     justify-content: unset;
   }
 
@@ -338,6 +366,15 @@ button {
   .hero-text-container {
     order: inherit;
     margin-top: inherit;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .index__video {
+    height: 49rem;
+  }
+  .index__video .centered {
+    font-size: 80px;
+    top: 25vw;
   }
 }
 .logo-valorant {
