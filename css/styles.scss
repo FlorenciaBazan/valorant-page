@@ -156,8 +156,20 @@ footer {
   }
 }
 
-.index__video video {
-  max-width: 100%;
+.index__video {
+  video {
+    max-width: 100%;
+  }
+
+  .centered {
+    position: absolute;
+    top: 70vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 20px;
+    color: map-get($colors, white);
+  }
 }
 
 .wrapper {
@@ -171,10 +183,15 @@ footer {
   grid-area: header;
 }
 
-.container {
+.custom-container {
   grid-area: content;
   display: flex;
   flex-direction: column;
+}
+
+.card-container {
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .contact__container {
@@ -187,6 +204,14 @@ footer {
 
 .main__footer {
   grid-area: footer;
+}
+
+.card {
+  margin: 20px;
+}
+
+.row {
+  --bs-gutter-x: 0;
 }
 
 .card__custom {
@@ -313,17 +338,22 @@ button {
 @media only screen and (min-width: 768px) {
   .index__video {
     margin-bottom: 20px;
-  }
 
-  .index__video video {
-    width: 100%;
+    video {
+      width: 100%;
+    }
+
+    .centered {
+      font-size: 80px;
+      top: 35vh;
+    }
   }
 
   .wrapper {
     min-height: 100%;
   }
 
-  .container {
+  .custom-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -354,12 +384,16 @@ button {
   }
 
   .index__video {
-    height: 49rem;
     overflow: hidden;
     width: 100%;
+
+    .centered {
+      font-size: 80px;
+      top: 40vw;
+    }
   }
 
-  .container {
+  .custom-container {
     justify-content: unset;
   }
 
@@ -381,6 +415,18 @@ button {
     margin-top: inherit;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .index__video {
+    height: 49rem;
+    
+    .centered {
+      font-size: 80px;
+      top: 25vw;
+    }
+  }
+}
+
 .logo-valorant {
   animation: rotation 4s infinite linear;
 }
