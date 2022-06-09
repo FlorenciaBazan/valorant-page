@@ -291,6 +291,23 @@ button {
   background-color: #683aa4;
 }
 
+.align__image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.jett-text {
+  text-align: center;
+}
+
+.title__weapon {
+  padding: 50px;
+  font-family: "Rubik Glitch", cursive;
+  text-decoration: underline;
+  color: rgb(121, 29, 9);
+}
+
 @media only screen and (min-width: 768px) {
   .index__video {
     margin-bottom: 20px;
@@ -331,6 +348,14 @@ button {
     order: inherit;
     margin-top: inherit;
   }
+
+  .transform__150 {
+    transform: translate(0%, 50%);
+  }
+
+  .jett-text {
+    text-align: unset;
+  }
 }
 @media only screen and (min-width: 1024px) {
   body {
@@ -367,6 +392,18 @@ button {
     order: inherit;
     margin-top: inherit;
   }
+
+  .transform__150 {
+    transform: translate(0%, 100%);
+  }
+
+  .jett-text {
+    text-align: unset;
+  }
+
+  .container__card {
+    margin: 20px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .index__video {
@@ -375,6 +412,20 @@ button {
   .index__video .centered {
     font-size: 80px;
     top: 25vw;
+  }
+
+  .transform__150 {
+    transform: translate(0%, 150%);
+  }
+
+  .align__image {
+    object-fit: cover;
+    height: 100%;
+    width: unset;
+  }
+
+  .jett-text {
+    text-align: unset;
   }
 }
 .logo-valorant {
